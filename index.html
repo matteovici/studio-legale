@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Studio Legale Colotto & Vicini</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0; background: #f9fafb; color: #333;
+  }
+  header {
+    background: #065f46; color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  header .logo {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+  header svg {
+    width: 80px; height: 80px;
+    stroke: white; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round;
+  }
+  header h1 {
+    font-size: 1.8rem; margin: 0;
+  }
+  header .contatti {
+    margin-top: 0.75rem;
+    font-size: 1rem;
+  }
+  header .contatti div {
+    margin: 0.2rem 0;
+  }
+  header .contatti a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  section.servizi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  article.avvocato {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
+    flex: 1 1 300px;
+    padding: 1rem 1.25rem;
+  }
+  article.avvocato h2 {
+    margin-top: 0;
+    color: #065f46;
+  }
+  article.avvocato ul {
+    padding-left: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  article.avvocato a.call-btn {
+    display: inline-block;
+    margin-top: 0.75rem;
+    background: #065f46;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  article.avvocato a.call-btn:hover {
+    background: #0a7f5e;
+  }
+  section.contatti {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
+    margin-top: 2rem;
+  }
+  section.privacy {
+    font-size: 0.85rem;
+    max-width: 900px;
+    margin: 3rem auto;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
+    color: #444;
+  }
+  section.privacy h3 {
+    margin-top: 0;
+    color: #065f46;
+  }
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    padding: 1rem 0;
+    border-top: 1px solid #ccc;
+    margin-top: 4rem;
+  }
+  @media (max-width: 600px) {
+    section.servizi {
+      flex-direction: column;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo" aria-label="Logo Studio Legale">
+    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false">
+      <!-- Bilancia della giustizia stilizzata -->
+      <line x1="32" y1="4" x2="32" y2="60" stroke="white" stroke-width="3" stroke-linecap="round"/>
+      <line x1="16" y1="20" x2="48" y2="20" stroke="white" stroke-width="3" stroke-linecap="round"/>
+      <line x1="16" y1="20" x2="24" y2="44" stroke="white" stroke-width="3" stroke-linecap="round"/>
+      <line x1="48" y1="20" x2="40" y2="44" stroke="white" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="20" cy="48" r="6" stroke="white" stroke-width="3"/>
+      <circle cx="44" cy="48" r="6" stroke="white" stroke-width="3"/>
+    </svg>
+  </div>
+  <h1>Studio Legale Colotto &amp; Vicini</h1>
+  <div class="contatti">
+    <div>Per urgenze:</div>
+    <div><strong>Avv. Lorenza Colotto</strong> <a href="tel:+393383391826">338‑339‑1826</a></div>
+    <div><strong>Avv. Matteo Vicini</strong> <a href="tel:+39338548672">338‑5484‑672</a></div>
+  </div>
+</header>
+
+<main>
+
+  <section class="servizi" aria-label="Avvocati e servizi">
+    <article class="avvocato" aria-labelledby="colotto-title">
+      <h2 id="colotto-title">Avv. Lorenza Colotto</h2>
+      <p><strong>Aree di competenza:</strong></p>
+      <ul>
+        <li>Diritto di famiglia</li>
+        <li>Diritto del lavoro</li>
+        <li>Diritto civile</li>
+      </ul>
+      <p><strong>Servizi chiave:</strong> separazioni e divorzi, gratuito patrocinio</p>
+      <a href="tel:+393383391826" class="call-btn" aria-label="Chiama Avvocato Lorenza Colotto">Chiama 338‑339‑1826</a>
+    </article>
+    
+    <article class="avvocato" aria-labelledby="vicini-title">
+      <h2 id="vicini-title">Avv. Matteo Vicini</h2>
+      <p><strong>Aree di competenza:</strong></p>
+      <ul>
+        <li>Diritto penale</li>
+        <li>Diritto penitenziario</li>
+        <li>Gratuito patrocinio</li>
+      </ul>
+      <p><strong>Nota:</strong> patrocinatore in Cassazione</p>
+      <a href="tel:+39338548672" class="call-btn" aria-label="Chiama Avvocato Matteo Vicini">Chiama 338‑5484‑672</a>
+    </article>
+  </section>
+
+  <section class="contatti" aria-label="Contatti studio legale">
+    <h2>Contatti &amp; Sede</h2>
+    <address>
+      Studio Legale Colotto &amp; Vicini<br />
+      Via Don Minzoni, 13<br />
+      19121 La Spezia<br />
+    </address>
+    <p><strong>Telefono Avv. Lorenza Colotto:</strong> <a href="tel:+393383391826">338‑339‑1826</a></p>
+    <p><strong>Telefono Avv. Matteo Vicini:</strong> <a href="tel:+39338548672">338‑5484‑672</a></p>
+  </section>
+
+  <section class="privacy" aria-label="Informativa privacy">
+    <h3>Informativa sul trattamento dei dati personali</h3>
+    <p><em>Ultimo aggiornamento: 11 agosto 2025</em></p>
+    <p><strong>Titolare del trattamento:</strong> Studio Legale Colotto &amp; Vicini — Via Don Minzoni, 13, 19121 La Spezia.</p>
+    <p><strong>Tipologie di dati raccolti:</strong> dati forniti tramite modulo di contatto, dati di navigazione tramite cookie tecnici e, con consenso, cookie analitici.</p>
+    <p><strong>Finalità del trattamento:</strong> rispondere alle richieste, adempiere obblighi legali, gestione relazione professionale.</p>
+    <p><strong>Periodo di conservazione:</strong> dati conservati per il tempo necessario e per finalità di difesa legale (circa 10 anni).</p>
+    <p><strong>Diritti dell'interessato:</strong> accesso, rettifica, cancellazione, limitazione, opposizione, portabilità.</p>
+    <p>Per informazioni o esercitare i diritti:</p>
+    <ul>
+      <li>Email: <a href="mailto:matteovici@gmail.com">matteovici@gmail.com</a></li>
+      <li>Email: <a href="mailto:avv.lcolotto@gmail.com">avv.lcolotto@gmail.com</a></li>
+      <li>PEC Avv. Matteo Vicini: <a href="mailto:matteo.vicini@avvocato.it">matteo.vicini@avvocato.it</a></li>
+      <li>PEC Avv. Lorenza Colotto: <a href="mailto:lorenza.colotto@avvocato.it">lorenza.colotto@avvocato.it</a></li>
+    </ul>
+    <p>Utilizziamo cookie tecnici essenziali per il funzionamento del sito e cookie analitici solo con consenso.</p>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 Studio Legale Colotto & Vicini - Tutti i diritti riservati
+</footer>
+
+</body>
+</html>
